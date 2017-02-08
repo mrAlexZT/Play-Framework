@@ -6,9 +6,8 @@ WORKDIR /opt/
 
 ADD https://example.lightbend.com/v1/download/play-java /opt/play-java.zip
 
-RUN unzip play-java.zip && \
-rm play-java.zip && \
-./opt/play-java/sbt run
+RUN unzip /opt/play-java.zip && \
+rm /opt/play-java.zip
 
 EXPOSE 9000
 
