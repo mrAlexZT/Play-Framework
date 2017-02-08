@@ -11,4 +11,4 @@ rm /opt/play-java.zip
 
 EXPOSE 9000
 
-CMD ["/opt/play-java/sbt", "run"]
+CMD ["/opt/play-java/sbt run"]
