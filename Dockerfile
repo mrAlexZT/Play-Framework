@@ -8,3 +8,7 @@ unzip play-java.zip \
 rm play-java.zip \
 cd play-java \
 sbt run
+
+EXPOSE 9000
+
+CMD ["/opt/play-java/sbt", "run"]
